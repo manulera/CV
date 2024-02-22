@@ -1,0 +1,543 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style id='other'>
+    body {
+      color: #333333;
+      font-size: 15pt;
+      font-family: sans-serif;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .column1 {
+      flex: 26%;
+      border-right: 2px solid #333333;
+      padding-right: 8px;
+    }
+
+    .column2 {
+      margin-left: 8px;
+      flex: 74%;
+    }
+
+    h1 {
+      margin-top: 0px;
+      margin-bottom: 7px;
+      font-size: 18pt;
+    }
+
+    h2 {
+      color: #15A083;
+      margin-bottom: 5px;
+      margin-top: 8px;
+      font-size: 17pt;
+    }
+
+    .column1 h2 {
+      margin-top: 8px;
+    }
+
+    .sub-name {
+      color: #15A083;
+      margin-top: 0px;
+      font-size: 11pt;
+      font-weight: normal;
+    }
+
+    h3 {
+      color: #15A083;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      font-size: 15pt;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-weight: normal;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      color: #15A083;
+    }
+
+    p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-align: justify;
+    }
+
+    .indent-1 {
+      margin-left: 6px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 6px;
+      margin: 0px;
+    }
+
+    li {
+      padding-left: 0px;
+      margin-left: 0px;
+      margin-bottom: 4pt;
+    }
+
+    .column1 li {
+      margin-bottom: 2px;
+    }
+
+    strong {
+      color: #555555;
+    }
+
+    a {
+      color: #129075;
+      font-weight: normal;
+      text-decoration: underline;
+      text-decoration-color: #129075;
+    }
+
+    .top-corner {
+      position: absolute;
+      top: 0.2cm;
+      right: 0.5cm;
+      font-size: 9pt;
+    }
+
+    .field-name {
+      color: #555555;
+      font-weight: bold;
+      margin-bottom: 1px;
+      margin-top: 4px;
+    }
+
+    li::before {
+      content: "■";
+      font-size: 1em;
+      display: inline-block;
+
+      margin-right: 4pt;
+    }
+
+    h3::before {
+      content: "▶";
+      font-size: .7em;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 4pt;
+    }
+
+    .subtitle-time::before {
+      content: " / ";
+      font-weight: inherit;
+    }
+
+    .subtitle-time {
+
+      color: #129075;
+      font-weight: normal;
+      display: inline-block;
+    }
+
+    .publication-title {
+      font-weight: bold;
+      margin-bottom: 2px;
+      margin-top: 4px;
+      color: #555555;
+    }
+
+    .publication-authors {
+      font-style: italic;
+    }
+
+    div.page {
+      width: 297mm;
+      height: 420mm;
+      /* border: solid black; */
+    }
+
+    div.page-content {
+      margin-top: 1cm;
+      margin-bottom: 1cm;
+      margin-left: 1.5cm;
+      margin-right: 1.5cm;
+      /* border: solid black; */
+    }
+
+    li p {
+      margin-left: 12pt;
+      margin-top: 2pt;
+      margin-bottom: 5pt;
+    }
+
+    ul.bold-li {
+      font-weight: bold;
+      color: #555555;
+    }
+
+    ul.bold-li p {
+      font-weight: normal;
+    }
+
+    .publication {
+      margin-top: 4pt;
+    }
+
+    .publication p {
+      text-align: left;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-content">
+      <h1>Manuel Lera Ramírez </h1>
+
+      <!-- <h2>Personal information</h2> -->
+      <div class="row">
+        <div class="column1">
+          <h2>Personal information</h2>
+          <div class="field">
+            <div class="field-name">ORCID:</div>
+            <div class="field-content"><a href="https://orcid.org/0000-0002-8666-9746">0000-0002-8666-9746</a>
+            </div>
+          </div>
+          <div class="field">
+            <div class="field-name">GitHub:</div>
+            <div class="field-content"><a href="https://github.com/manulera">@manulera</a></div>
+          </div>
+          <div class="field">
+            <div class="field-name">Email:</div>
+            <div class="field-content">
+              <a href="mailto:manuel.lera-ramirez@ucl.ac.uk">manuel.lera-ramirez@ucl.ac.uk</a>
+            </div>
+          </div>
+          <!-- <div class="field">
+            <div class="field-name">Telephone number:</div>
+            <div class="field-content"><a href=""></a></div>
+          </div> -->
+          <div class="field">
+            <div class="field-name">Languages:</div>
+            <ul class="field-content">
+              <li>Spanish (native)</li>
+              <li>English (proficient)</li>
+              <li>French (intermediate)</li>
+              <li>Italian (intermediate)</li>
+            </ul>
+          </div>
+          <h2>Software development</h2>
+          <div class="field">
+            <div class="field-name">Programming languages:</div>
+            <ul class="field-content">
+              <li>Python</li>
+              <li>C++</li>
+              <li>Matlab</li>
+              <li>JavaScript</li>
+              <li>PHP (personal projects)</li>
+              <li>MySQL (personal projects)</li>
+            </ul>
+          </div>
+          <div class="field">
+            <div class="field-name">Web development:</div>
+            <ul class="field-content">
+              <li>HTML/CSS/JavaScript</li>
+              <li>Symfony (PHP)</li>
+              <li>React (JavaScript)</li>
+              <li>FastAPI (Python)</li>
+              <li>NGINX</li>
+              <li>Cloud (Digital Ocean)</li>
+            </ul>
+          </div>
+          <div class="field">
+            <div class="field-name">Other:</div>
+            <ul class="field-content">
+              <li>Ontology engineering (Protegé)</li>
+              <li>Containerisation (Docker)</li>
+            </ul>
+          </div>
+          <h2>Academic awards</h2>
+          <div class="">
+            <div>
+              <div class='field-name'>2016 - Prix Syngenta Crop Protection Monthey</div>
+              <div>Best academic record in MSc promotion</div>
+            </div>
+            <div>
+              <div class='field-name'>2014 - Outstanding Achievement Award</div>
+              <div>Best academic record in Bachelor promotion.</div>
+            </div>
+            <div>
+              <div class='field-name'>2010 - Excellence in Academic Performance</div>
+              <div>Best academic record in Baccalaureate promotion.</div>
+            </div>
+            <div>
+              <div class='field-name'>2010 - Bronze medal at the Spanish National Chemistry Olympics</div>
+            </div>
+            <div>
+              <div class='field-name'>2010 - Extraordinary Baccalaureate Award</div>
+              <div>Regional distinction awarded to students with the best academic record in Baccalaureate.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column2">
+
+          <h2>Summary</h2>
+          <p>As a biocurator in PomBase, I work in the standardisation of biological knowledge and use
+            technologies and bioinformatic resources that will be applied in this project.
+            During my research career, I have acquired and applied a broad set of
+            technical and soft skills, including software development, yeast genetic manipulation, and efficient
+            communication with researchers to develop software that suits their needs. These skills, combined with
+            my first-hand experience with the use-case of Genestorian (managing
+            collections of plasmids and strains) will allow me to deliver the proposed objectives.
+          </p>
+
+          <h2>Experience</h2>
+          <h3>Biocurator in PomBase: University College London, UK <div class="subtitle-time">Apr 2022
+              - ongoing
+            </div>
+          </h3>
+          <ul>
+            <li>Literature curation in collaboration with authors, documentation of website and tools.</li>
+            <li><a href="https://github.com/pombase/fypo/">FYPO</a> Phenotype ontology engineering (Protegé),
+              software development for database quality control (<a
+                href="https://github.com/pombase/allele_qc">Python</a>) and ontology visualisation (<a
+                href="https://ontologynetwork.netlify.app/">JavaScript</a>).</li>
+          </ul>
+          <h3>Postdoctoral fellow: Institut Curie, Paris, France <div class="subtitle-time">Jan 2021
+              - Nov 2021
+            </div>
+          </h3>
+          <p style="margin-left: 14px;">
+            Continuation of my PhD work in the lab of Dr. Phong Tran, described below.
+          </p>
+          <h3>PhD in Biology: University of Heidelberg, Germany <div class="subtitle-time">Sep 2016 -
+              Dec 2020
+            </div>
+          </h3>
+          <div class="indent-1">
+            <h4>Phong Tran Lab, Institut Curie, France / Feb 2018 - Dec 2020</h4>
+            <ul>
+              <li>Fission yeast genetics, live microscopy and image analysis (Python/Matlab) to study
+                microtubule
+                dynamics in the mitotic spindle.</li>
+              <li>First author publication measuring microtubule dynamics during anaphase B for the first time
+                in any organism using fission yeast (<a href="https://doi.org/10.7554/eLife.72630">Lera-Ramirez et al.
+                  2022</a>).</li>
+              <li>Coauthor publication developing an analysis pipeline and graphical user interface for the
+                analysis of
+                microscopy movies (<a href="https://doi.org/10.1242/jcs.240234">Loncar et al. 2020</a>).
+              </li>
+            </ul>
+            <h4>François Nédélec Lab, EMBL Heidelberg, Germany / Sep 2016 - Jan 2018</h4>
+            <ul>
+              <li>Analytical modelling (Python/Matlab) and computer simulations (C++) of cytoskeleton
+                mechanics.
+              </li>
+              <li>Participation in the development of the simulation software <a
+                  href="https://gitlab.com/f-nedelec/cytosim">Cytosim</a>, a large C++ project involving
+                multiple developers running for more than 16 years.</li>
+              <li>First author publication modelling microtubule sliding
+                (<a href="https://doi.org/10.1002/cm.21626">Lera-Ramírez & Nédélec 2019</a>).</li>
+              <li>Collaboration with experimentalists extending simulation to model their
+                system (<a href="https://doi.org/10.1016/j.cub.2019.05.049">Hannabuss et al. 2019</a>).</li>
+            </ul>
+          </div>
+          <h3>MSc Biochemistry: University of Geneva, Switzerland <div class="subtitle-time">Sep 2014
+              - Apr 2016 </div>
+          </h3>
+          <ul>
+            <li>Master thesis in the laboratory of Prof. Marcos González-Gaitán using live embryo imaging to
+              study oriented cell division during zebrafish development.</li>
+            <li>Development of an image analysis pipeline and graphical user interface still used in the lab,
+              which led to coauthorship in
+              <a href="https://doi.org/10.1016/j.devcel.2020.04.015">Bürgi et al. 2020</a>.
+            </li>
+          </ul>
+          <h3>BSc in Biotechnology: University of Zaragoza, Spain <div class="subtitle-time">Sep 2010 -
+              Jun 2014</div>
+          </h3>
+          <ul>
+            <li>Erasmus scholarship in University of Geneva (Course 2013-2014).</li>
+            <li>Bachelor thesis in the laboratory of Prof. Marie-Luce Bochaton-Piallat on circadian expression
+              of actin isoforms in pig endothelial cells.</li>
+          </ul>
+          <h2>Awarded funding</h2>
+          <ul class="bold-li">
+            <li>ELIXIR-UK DaSH Fellowship / Sept 2022 - <a
+                href="https://elixiruknode.org/activities/elixir-dash-fellowship/">link</a>
+              <p>Funding and training fellowship to produce training videos for PomBase users.</p>
+            </li>
+            <li>Alan Turing Institute Post-Doctoral Enrichment Award / Jul 2022 - <a
+                href="https://www.turing.ac.uk/work-turing/alan-turing-institute-post-doctoral-enrichment-awards-2022">link</a>
+              <p>£2000 to fund expert advice for the development of ShareYourCloning
+                by the <a href="https://www.ucl.ac.uk/research-it-services/research-software-development">Research
+                  Software Development Group</a> in UCL.</p>
+            </li>
+            <li>LabEx Transition fellowship / Feb 2021 - <a
+                href="https://labex-cellnscale.institut-curie.org/page/transition-fellowships">link</a>
+              <p>Fellowship to fund part of my postdoctoral stint in Institut Curie</p>
+            </li>
+            <li>H2020 Marie Skłodowska-Curie Actions PhD fellowship / Sep 2016 - <a
+                href="https://cordis.europa.eu/project/id/675737">link</a>
+              <p>PhD fellowship, part of an International Training Network</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <div class="page-content">
+      <div class='publication-section'>
+        <h2>Publications</h2>
+        <div class="indent-1">
+          <div class="publication">
+            <div class="publication-title">Microtubule rescue at midzone edges promotes overlap stability and
+              prevents spindle collapse during anaphase B</div>
+            <div class="publication-authors"><u>Lera-Ramirez, M.</u>, Nédélec, F. J., & Tran, P. T.</div>
+            <div class="publication-details">eLife (2022) - <a
+                href="https://doi.org/10.7554/eLife.72630">doi:10.7554/eLife.72630</a></div>
+          </div>
+          <div class="publication">
+            <div class="publication-title">Theory of antiparallel microtubule overlap stabilization by motors and
+              diffusible crosslinkers</div>
+            <div class="publication-authors"><u>Lera-Ramirez, M.</u> & Nédélec, F.J.</div>
+            <div class="publication-details">Cytoskeleton (2019) - <a
+                href="https://doi.org/10.1002/cm.21626">doi:10.1002/cm.21626</a></div>
+          </div>
+          <div class="publication">
+            <div class="publication-title">Self-Organization of Minimal Anaphase Spindle Midzone Bundles</div>
+            <div class="publication-authors">Hannabuss, J., <u>Lera-Ramirez, M.</u>, Cade, N. I., Fourniol, F. J.,
+              Nédélec,
+              F.,
+              Surrey, T.</div>
+            <div class="publication-details">Current Biology (2019) - <a
+                href="https://doi.org/10.1016/j.cub.2019.05.049">doi:10.1016/j.cub.2019.05.049</a></div>
+          </div>
+          <div class="publication">
+            <div class="publication-title">Kinesin-14 family proteins and microtubule dynamics define S. pombe
+              mitotic and meiotic spindle assembly, and elongation</div>
+            <div class="publication-authors">Loncar, A., Rincon, S. A., <u>Ramirez, M. L.</u>, Paoletti, A., & Tran, P.
+              T.
+            </div>
+            <div class="publication-details">Journal of Cell Science (2020) - <a
+                href="https://doi.org/10.1242/jcs.240234">doi:10.1242/jcs.240234</a></div>
+          </div>
+          <div class="publication">
+            <div class="publication-title">Ligand Binding to the Collagen VI Receptor Triggers a Talin-to-RhoA
+              Switch that Regulates Receptor Endocytosis</div>
+            <div class="publication-authors">Bürgi, J., Abrami, L., Castanon, I., Abriata, L. A., Kunz, B., Yan, S.
+              E., <u>Lera, M.</u>, … van der Goot, F. G.</div>
+            <div class="publication-details">Developmental Cell (2020) - <a
+                href="https://doi.org/10.1016/j.devcel.2020.04.015">doi:10.1016/j.devcel.2020.04.015</a></div>
+          </div>
+          <div class="publication">
+            <div class="publication-title">Ase1 selectively increases lifetime of antiparallel microtubule overlaps.
+            </div>
+            <div class="publication-authors">Krattenmacher, J., <u>Lera-Ramirez, M.</u>, Herynek S., Liu X., Neuzil P.,
+              Nedelec F.J., Diez S., Braun M., Lansky Z.</div>
+            <div class="publication-details">Current Biology (submitted August 2022, in revision pending resubmission)
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>Open Source Software</h2>
+      <div class="indent-1">
+        <div class="publication">
+          <div class='field-name'>ShareYourCloning prototype (Personal project) - <a
+              href="https://shareyourcloning.netlify.app/">Link</a>
+          </div>
+          <p>Prototype of web application to document molecular cloning. JavaScript/React and
+            Python/FastAPI.</p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>Genestorian prototype (Personal project) - <a
+              href="https://prototype.genestorian.org/ ">Link</a>
+          </div>
+          <p>A proof of concept prototype not intended for further development. It was used to show researchers an
+            interface that uses links between strains, alleles, plasmids, etc. Built with PHP/Symfony and MySQL.</p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>PomBase allele quality control (PomBase project) - <a
+              href="https://github.com/pombase/allele_qc">Link</a>
+          </div>
+          <p>Python pipeline to fix allele descriptions in PomBase to adhere to our nomenclature and verify aminoacid
+            coordinates. Work in progress.</p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>Ontology relationship viewer (PomBase project) - <a
+              href="https://github.com/pombase/allele_qc">Link</a>
+          </div>
+          <p>Simple web application (HTML and vanilla JavaScript) to visualise ontology relationships in the browser,
+            and copy relationship maps in MERMAID format to be pasted in GitHub issues.</p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>Cytosim (Contributor) - <a href="https://gitlab.com/f-nedelec/cytosim">Link</a>
+          </div>
+          <p>Computer simulation of cytoskeleton mechanics (C++). I extended it during my PhD, and developed a <a
+              href="https://github.com/manulera/cytosimGrammar">grammar</a>
+            for syntax highlighting of simulation configuration files.</p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>Univarscatter (Personal project) - <a
+              href="https://www.mathworks.com/matlabcentral/fileexchange/54243-univarscatter">Link</a></div>
+          <p>A bee swarm plot implementation in MATLAB. More than 1600 downloads from Mathworks, used by <a
+              href="https://github.com/manulera/UnivarScatter#publications-using-univarscatter">others</a>, including
+            in <a href="https://doi.org/10.1038/s41586-019-1492-9">Nature</a>.</p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>eLabFTW (Contributor) - <a href="https://github.com/elabftw/elabftw">Link</a>
+          </div>
+          <p>Open Source Electronic Lab Notebook (Docker/PHP/MySQL). Contributed new page view <a
+              href="https://github.com/elabftw/elabftw/pull/2370">#2370</a>.</p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>BioPython (Contributor) - <a href="https://github.com/biopython/biopython">Link</a>
+          </div>
+          <p>Bug fix <a href="https://github.com/biopython/biopython/pull/3881">#3881</a></p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>bbop-graph (Contributor) - <a
+              href="https://github.com/berkeleybop/bbop-graph">Link</a>
+          </div>
+          <p>JavaScript graph library. Bug fix <a href="https://github.com/berkeleybop/bbop-graph/issues/6">#6</a></p>
+        </div>
+        <div class="publication">
+          <div class='field-name'>pydna (Maintainer) - <a href="https://github.com/BjornFJohansson/pydna">Link</a>
+          </div>
+          <p>Open Source python cloning library. Recently named maintainer after discussion with lead developer, since
+            it will be used heavily for ShareYourCloning.</p>
+        </div>
+      </div>
+      <h2>Mentorship Programmes</h2>
+      <div class="indent-1">
+        <div class="publication">
+          <div class='field-name'>Google Summer of Code 2022 (Mentor) - <a
+              href="https://github.com/manulera/genestorian_data_refinement/">Link</a>
+          </div>
+          <p>I mentored a third year Computer Science student to develop a first prototype of a pipeline to extract
+            genotypes from laboratory spreadsheets (prototype of Objective 4 from the proposal).</p>
+        </div>
+        <div class="publication">
+          <div class='field-name'> Open Life Science - 2021 (Mentee) - <a
+              href="https://openlifesci.org/ols-4.html">Link</a>
+          </div>
+          <p>16-week mentorship programme that trains researchers to become Open Science ambassadors, focusing on
+            inclusion and Open Science. I remain an active member of this community and participate as training session
+            facilitator.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- <div class="top-corner">This CV was produced from html. <a href="">See the source code</a>.</div> -->
+</body>
